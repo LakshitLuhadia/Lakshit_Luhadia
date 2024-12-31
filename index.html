@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--
 <html lang="en">
 
 <head>
@@ -13,11 +13,6 @@
         Lakshit Luhadia's Portfolio
     </header>
 
-    <!-- <div class="content-overlay">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my projects and experience through this interactive 3D animation!</p>
-        <button onclick="showDetails()">Learn More</button>
-    </div> -->
 
     <footer>
         Built with ❤️ by <a href="https://github.com/lakshit-luhadia" target="_blank">Lakshit Luhadia</a>
@@ -30,6 +25,87 @@
             alert("This button can be linked to different sections of your portfolio!");
         }
     </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Themed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page">
+        <!-- <div class="name-tag">Lakshit Luhadia</div> -->
+        <div>
+            <canvas id="threejs-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Lakshit! I'm a developer with a passion for technology and Formula 1.
+                    From building cutting-edge applications to understanding aerodynamics, I bring speed and precision to
+                    every project.
+                </p>
+            </div>
+            <div class="avatar-container">
+                <canvas id="about-me-avatar"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="timeline-container">
+            <div class="timeline"></div>
+            <h2>Experience</h2>
+            <div class="experience-item left">
+                <h3>KPMG - Data Analyst Intern</h3>
+                <p>Developed predictive models and analyzed datasets for business insights.</p>
+            </div>
+            <div class="experience-item right">
+                <h3>Electrium Mobility - Web Developer</h3>
+                <p>Built responsive web applications and optimized UX design.</p>
+            </div>
+            <div class="experience-item left">
+                <h3>UW Code Lab</h3>
+                <p>Built a degree planner platform for all UW students to enhance academic planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>PixelPerfectAI</h3>
+                <p>A web app that uses ML to detect blurry photos and closed eyes.</p>
+            </div>
+            <div class="project">
+                <h3>University Predictor</h3>
+                <p>Analyzes student scores and recommends universities for applications.</p>
+            </div>
+            <div class="project">
+                <h3>Hairstyle Recommendation Tool</h3>
+                <p>An AI tool that recommends hairstyles based on face shape.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>

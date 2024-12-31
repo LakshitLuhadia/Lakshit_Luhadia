@@ -1,5 +1,5 @@
 /* Reset margin and padding for all elements */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +13,15 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #ffffff;
+    color: #000000;
+}
+body {
+    background-image: url('./carbon_fiber.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    background-color: gr;
 }
 
 header {
@@ -87,7 +94,6 @@ canvas {
     transform: scale(1.1);
 }
 
-/* Fade-in animation for options */
 .fade-in {
     animation: fadeInOut 4s ease-in-out forwards;
 }
@@ -111,7 +117,7 @@ canvas {
     }
 }
 
-/* Style for buttons */
+
 .options-container {
     position: fixed;
     top: 20%;
@@ -120,7 +126,7 @@ canvas {
     display: flex;
     gap: 20px;
     z-index: 100;
-    visibility: hidden; /* Initially hidden */
+    visibility: hidden;
 }
 
 button {
@@ -136,4 +142,162 @@ button {
 
 button:hover {
     background-color: #666;
+} */
+
+
+/* Global Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Landing Page */
+#landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* .name-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+} */
+
+/* About Me Section */
+#about-me {
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.avatar-container {
+    flex: 1;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+/* Experience Section */
+#experience {
+    background-color: #181818;
+    padding: 100px 20px;
+}
+
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #ff0000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience-item {
+    position: relative;
+    width: 50%;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.experience-item.left {
+    align-self: flex-start;
+}
+
+.experience-item.right {
+    align-self: flex-end;
+}
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #202020;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.project h3 {
+    color: #ff0000;
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
